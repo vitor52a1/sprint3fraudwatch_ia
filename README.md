@@ -37,7 +37,7 @@ Este repositório contém uma API desenvolvida com FastAPI para detectar possív
 
 ## Execução da API
 
-3. Inicie o servidor FastAPI:
+3. Inicie o servidor FastAPI pelo terminal do Python:
    ```sh
    uvicorn main:app --reload
    ```
