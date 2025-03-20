@@ -6,8 +6,8 @@ Link do vídeo: https://youtu.be/Zbomiqwn3Lo
 
 Link do dataset: https://drive.google.com/file/d/1JRJReJmWt_1qTdtrkjpq4-KrsPHaBo97/view?usp=sharing
 
-RM553542 Luiz Otávio - 2tdspr
-RM553483 Vitor de Melo - 2tdspr
+RM553542 Luiz Otávio - 2tdspr /
+RM553483 Vitor de Melo - 2tdspr /
 RM553748 Mauricio Pereira - 2tdspc
 
 # API de Detecção de Fraudes em Procedimentos Odontológicos
