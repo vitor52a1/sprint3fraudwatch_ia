@@ -2,7 +2,9 @@ Link do github da Sprint 1 2: https://github.com/yagoluucas/sprint2_fraudwatch_i
 
 Link github da Sprint 3 e 4: https://github.com/vitor52a1/sprint3fraudwatch_ia
 
-Link do vídeo: https://youtu.be/Zbomiqwn3Lo
+Link do vídeo Sprint3: https://youtu.be/Zbomiqwn3Lo
+
+Link do vídeo Sprint4: https://youtu.be/tThTMSFOmYk
 
 Link do dataset: https://drive.google.com/file/d/1JRJReJmWt_1qTdtrkjpq4-KrsPHaBo97/view?usp=sharing
 
