@@ -99,3 +99,59 @@ Resposta exemplo
   ]
 }
 ```
+
+# Reflexão e Avaliação do Projeto de API de Previsão de Fraude
+
+## 1. Demonstração da Versão Final do Projeto
+
+O projeto consiste em uma API de previsão de fraude baseada em dados textuais, utilizando um modelo treinado e embeddings de linguagem natural extraídos via BERT. A API está implementada em FastAPI, permitindo receber dados via POST, fazer previsões e armazenar as informações de uso e métricas localmente para acompanhamento. Também há endpoints para consultar métricas e verificar o status da API.
+
+As funcionalidades principais incluem:
+
+- Recebimento de dados via JSON para análise (sintomas, diagnóstico, procedimento, lista de insumos).
+- Geração de embeddings para representar os dados.
+- Predição da probabilidade de fraude com um modelo treinado.
+- Armazenamento das predições para geração de métricas.
+- Endpoints para consulta das métricas e status da API.
+- Utilização local via Postman para testes e desenvolvimento.
+
+## 2. Autocrítica (Reflexão sobre o processo de desenvolvimento)
+
+### O que funcionou:
+
+- Implementação bem-sucedida do modelo de predição dentro da API.
+- Integração do BERT para geração de embeddings, permitindo tratar textos complexos.
+- Armazenamento dinâmico dos dados e métricas gerados durante as requisições.
+- Uso do FastAPI, que facilitou a criação de endpoints e documentação automática.
+- Testes locais via Postman para validar as respostas da API.
+
+### O que não funcionou ou desafios:
+
+- Inicialmente houve dificuldade em integrar o processamento dos dados de forma eficiente; nas primeiras tentativas, o CSV gerado era enorme, dificultando os testes devido ao tempo de compilação.
+- Ausência de autenticação e controle de acesso, deixando a API vulnerável.
+- Implementação diretamente na aplicação sem integrações adequadas, o que dificultou a execução e exigiu rodar localmente para evitar transtornos no produto final.
+- Falta de monitoramento e logs detalhados para facilitar a manutenção em produção.
+
+### O que foi aprendido:
+
+- A importância de escolher a arquitetura correta para persistência dos dados (arquivo vs banco de dados).
+- Como trabalhar com embeddings e modelos pré-treinados.
+- Utilização do FastAPI para criar APIs REST de forma rápida e eficiente.
+- Como estruturar e organizar endpoints para funcionalidades distintas.
+
+### O que faria diferente:
+
+- Planejar desde o início um banco de dados para métricas e histórico, garantindo escalabilidade.
+- Implementar autenticação básica para proteger os endpoints.
+- Criar testes automatizados para garantir a qualidade do código.
+- Investir em monitoramento e logging desde a fase inicial.
+
+## 3. Planos para o futuro do projeto
+
+- Migrar o armazenamento de métricas para um banco de dados como MongoDB ou PostgreSQL para maior eficiência.
+- Adicionar autenticação e autorização para proteger o acesso à API.
+- Implementar monitoramento com ferramentas como Prometheus e dashboards visuais (Grafana).
+- Adicionar explicações interpretáveis para as predições, aumentando a transparência.
+- Expandir a API para suportar múltiplos modelos e versões, com controle de versão.
+- Otimizar o processamento e permitir predições em lote para maior desempenho.
+
