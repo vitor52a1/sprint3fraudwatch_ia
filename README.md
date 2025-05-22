@@ -47,34 +47,55 @@ Este repositório contém uma API desenvolvida com FastAPI para detectar possív
    http://127.0.0.1:8000/docs
    ```
 
+## Endpoints 
+GET / Testa se a API está online
+POST /predict Envia os dados para prever chance de fraude
+GET /metrics Retorna dados e métricas armazenadas das requisições feitas.
+
 ## Uso da API no Postman
 
-1. Abra o Postman.
-2. Utilize a URL:
-   ```
-   http://127.0.0.1:8000/predict
-   ```
-3. Escolha o método **POST**.
-4. No **Body**, selecione **raw** e defina o formato **JSON**.
-5. Envie um JSON no seguinte formato:
-   ```json
-   {
-       "sintomas": "Dor de dente leve",
-       "diagnostico": "Cárie pequena",
-       "procedimento": "Restauração simples",
-       "lista_de_insumos": "Resina composta, anestesia local"
-   }
-   ```
+1. **Testar API online**
 
-6. A resposta será algo semelhante a:
-   ```json
-   {
-       "chance_de_fraude": 0.3107525730183178
-   }
-   ```
+   - Método: `GET`  
+   - URL: `http://127.0.0.1:8000/`  
 
+2. **Fazer previsão**
 
+   - Método: `POST`  
+   - URL: `http://127.0.0.1:8000/predict`  
+   - Body → raw → JSON:
 
-Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
+```json
+{
+  "sintomas": "Dor de dente leve",
+  "diagnostico": "Cárie pequena",
+  "procedimento": "Restauração simples",
+  "lista_de_insumos": "Resina composta, anestesia local"
+}
+```
+Resposta exemplo
 
+```json{
+  "chance_de_fraude": 0.31
+}
+```
+3. **Consultar métricas e histórico das requisições**
+   - Método: `GET`  
+   - URL: `http://127.0.0.1:8000/metrics`  
 
+Resposta exemplo
+```json
+{
+  "total_requisicoes": 3,
+  "media_chance_de_fraude": 0.42,
+  "detalhes": [
+    {
+      "sintomas": "Dor de dente leve",
+      "diagnostico": "Cárie pequena",
+      "procedimento": "Restauração simples",
+      "lista_de_insumos": "Resina composta, anestesia local",
+      "chance_de_fraude": 0.5
+    }
+  ]
+}
+```
