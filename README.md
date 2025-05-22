@@ -48,9 +48,9 @@ Este repositório contém uma API desenvolvida com FastAPI para detectar possív
    ```
 
 ## Endpoints 
-GET / Testa se a API está online
-POST /predict Envia os dados para prever chance de fraude
-GET /metrics Retorna dados e métricas armazenadas das requisições feitas.
+- GET / Testa se a API está online
+- POST /predict Envia os dados para prever chance de fraude
+- GET /metrics Retorna dados e métricas armazenadas das requisições feitas.
 
 ## Uso da API no Postman
 
