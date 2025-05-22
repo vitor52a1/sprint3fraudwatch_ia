@@ -1,6 +1,6 @@
 Link do github da Sprint 1 2: https://github.com/yagoluucas/sprint2_fraudwatch_ia
 
-Link github da Sprint 3: https://github.com/vitor52a1/sprint3fraudwatch_ia
+Link github da Sprint 3 e 4: https://github.com/vitor52a1/sprint3fraudwatch_ia
 
 Link do vídeo: https://youtu.be/Zbomiqwn3Lo
 
