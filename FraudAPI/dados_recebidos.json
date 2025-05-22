@@ -1,0 +1,14 @@
+[
+  {
+    "sintomas": "Dor de dente ",
+    "diagnostico": "Cárie pequena",
+    "procedimento": "Limpeza",
+    "lista_de_insumos": "Obturador"
+  },
+  {
+    "sintomas": "Dor no siso ",
+    "diagnostico": "extração do siso",
+    "procedimento": "Extração",
+    "lista_de_insumos": "Anestesia, tesoura, pinça"
+  }
+]

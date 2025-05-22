@@ -1,0 +1,16 @@
+[
+  {
+    "sintomas": "Dor no siso ",
+    "diagnostico": "extra\u00e7\u00e3o do siso",
+    "procedimento": "Extra\u00e7\u00e3o",
+    "lista_de_insumos": "Anestesia, tesoura, pin\u00e7a",
+    "chance_de_fraude": 0.2947990573478632
+  },
+  {
+    "sintomas": "teste ",
+    "diagnostico": "teste",
+    "procedimento": "teste",
+    "lista_de_insumos": "teste",
+    "chance_de_fraude": 0.3074364965991669
+  }
+]
