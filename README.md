@@ -100,9 +100,9 @@ Resposta exemplo
 }
 ```
 
-# Reflexão e Avaliação do Projeto de API de Previsão de Fraude
+# Reflexão e Avaliação do Projeto de API de Previsão de Fraude 
 
-## 1. Demonstração da Versão Final do Projeto
+## 1. Demonstração da Versão Final (Sprint4) do Projeto
 
 O projeto consiste em uma API de previsão de fraude baseada em dados, utilizando um modelo treinado e embeddings de linguagem natural extraídos via BERT. A API está implementada em FastAPI, permitindo receber dados via POST, fazer previsões e armazenar as informações de uso e métricas localmente para acompanhamento. Também há endpoints para consultar métricas e verificar o status da API.
 
