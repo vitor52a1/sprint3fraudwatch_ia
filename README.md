@@ -104,7 +104,7 @@ Resposta exemplo
 
 ## 1. Demonstração da Versão Final do Projeto
 
-O projeto consiste em uma API de previsão de fraude baseada em dados textuais, utilizando um modelo treinado e embeddings de linguagem natural extraídos via BERT. A API está implementada em FastAPI, permitindo receber dados via POST, fazer previsões e armazenar as informações de uso e métricas localmente para acompanhamento. Também há endpoints para consultar métricas e verificar o status da API.
+O projeto consiste em uma API de previsão de fraude baseada em dados, utilizando um modelo treinado e embeddings de linguagem natural extraídos via BERT. A API está implementada em FastAPI, permitindo receber dados via POST, fazer previsões e armazenar as informações de uso e métricas localmente para acompanhamento. Também há endpoints para consultar métricas e verificar o status da API.
 
 As funcionalidades principais incluem:
 
@@ -120,14 +120,14 @@ As funcionalidades principais incluem:
 ### O que funcionou:
 
 - Implementação bem-sucedida do modelo de predição dentro da API.
-- Integração do BERT para geração de embeddings, permitindo tratar textos complexos.
+- Integração do BERT para geração de embeddings, permitindo tratar dados complexos.
 - Armazenamento dinâmico dos dados e métricas gerados durante as requisições.
 - Uso do FastAPI, que facilitou a criação de endpoints e documentação automática.
 - Testes locais via Postman para validar as respostas da API.
 
 ### O que não funcionou ou desafios:
 
-- Inicialmente houve dificuldade em integrar o processamento dos dados de forma eficiente; nas primeiras tentativas, o CSV gerado era enorme, dificultando os testes devido ao tempo de compilação.
+- Inicialmente houve dificuldade em integrar o processamento dos dados de forma eficiente; nas primeiras tentativas, o CSV gerado era enorme, dificultando os testes devido ao tempo de compilação que ficava inviável.
 - Ausência de autenticação e controle de acesso, deixando a API vulnerável.
 - Implementação diretamente na aplicação sem integrações adequadas, o que dificultou a execução e exigiu rodar localmente para evitar transtornos no produto final.
 - Falta de monitoramento e logs detalhados para facilitar a manutenção em produção.
@@ -148,7 +148,7 @@ As funcionalidades principais incluem:
 
 ## 3. Planos para o futuro do projeto
 
-- Migrar o armazenamento de métricas para um banco de dados como MongoDB ou PostgreSQL para maior eficiência.
+- Migrar o armazenamento de métricas para um banco de dados como MongoDB para maior eficiência, por exemplo.
 - Adicionar autenticação e autorização para proteger o acesso à API.
 - Implementar monitoramento com ferramentas como Prometheus e dashboards visuais (Grafana).
 - Adicionar explicações interpretáveis para as predições, aumentando a transparência.
